@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/vday-app/static/css/main.e6c13ad2.css",
-    "main.js": "/vday-app/static/js/main.2b899fd7.js",
+    "main.css": "/vday-app/static/css/main.51146aaa.css",
+    "main.js": "/vday-app/static/js/main.151bfbdd.js",
     "static/js/488.e4922a8a.chunk.js": "/vday-app/static/js/488.e4922a8a.chunk.js",
     "index.html": "/vday-app/index.html",
-    "main.e6c13ad2.css.map": "/vday-app/static/css/main.e6c13ad2.css.map",
-    "main.2b899fd7.js.map": "/vday-app/static/js/main.2b899fd7.js.map",
+    "main.51146aaa.css.map": "/vday-app/static/css/main.51146aaa.css.map",
+    "main.151bfbdd.js.map": "/vday-app/static/js/main.151bfbdd.js.map",
     "488.e4922a8a.chunk.js.map": "/vday-app/static/js/488.e4922a8a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.2b899fd7.js"
+    "static/css/main.51146aaa.css",
+    "static/js/main.151bfbdd.js"
   ]
 }

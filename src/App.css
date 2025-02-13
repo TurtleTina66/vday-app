@@ -38,8 +38,8 @@ body {
 
 .text {
   position: absolute;
-  top: 35%;
-  left: 35%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
   color: #8B0000; /* Weinrot */
   font-family: 'Arial', sans-serif;
@@ -50,7 +50,6 @@ body {
   width: 220px;
   word-wrap: break-word;
   text-align: center;
-  z-index: 999;
 }
 
 @keyframes pulse {
@@ -62,5 +61,31 @@ body {
   }
   100% {
       transform: rotate(45deg) scale(1);
+  }
+}
+
+@media (max-width: 600px) {
+  .heart {
+      width: 200px;
+      height: 200px;
+  }
+
+  .heart::before,
+  .heart::after {
+      width: 200px;
+      height: 200px;
+  }
+
+  .heart::before {
+      top: -100px;
+  }
+
+  .heart::after {
+      left: -100px;
+  }
+
+  .text {
+      font-size: 1em;
+      width: 150px;
   }
 }

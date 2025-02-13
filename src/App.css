@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
 }
 
-.App-link {
-  color: #61dafb;
+.heart {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: #87CEEB; /* Himmelblau */
+  transform: rotate(45deg);
+  animation: pulse 1.5s infinite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.heart::before,
+.heart::after {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: #87CEEB;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -150px;
+  left: 0;
+}
+
+.heart::after {
+  top: 0;
+  left: -150px;
+}
+
+.text {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  color: #8B0000; /* Weinrot */
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  white-space: normal;
+  width: 220px;
+  word-wrap: break-word;
+  text-align: center;
+  z-index: 999;
+}
+
+@keyframes pulse {
+  0% {
+      transform: rotate(45deg) scale(1);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+      transform: rotate(45deg) scale(1.2);
+  }
+  100% {
+      transform: rotate(45deg) scale(1);
   }
 }
